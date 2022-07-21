@@ -2,12 +2,10 @@ import streamlit as st
 import numpy as np
 import pandas as pd
 
+
+import time
+
 st.header("My first Streamlit App")
-st.title("My first Streamlit Title - Curn Data")
-st.write(pd.DataFrame({
-    'Intplan': ['yes', 'yes', 'yes', 'no'],
-    'Churn Status': [0, 0, 0, 1]
-}))
 
 option = st.sidebar.selectbox(
     'Select a mini project',
@@ -48,4 +46,4 @@ else:
         bar.progress(i + 1)
         time.sleep(0.1)
 
-    
+    '...and now we\'re done!'
