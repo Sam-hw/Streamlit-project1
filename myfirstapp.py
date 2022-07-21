@@ -1,7 +1,9 @@
-echo "# Streamlit-project1" >> README.md
-git init
-git add README.md
-git commit -m "first commit"
-git branch -M 'main'
-git remote add origin https://github.com/Sam-hw/Streamlit-project1.git
-git push -u origin 'main'
+import streamlit as st
+import numpy as np
+import pandas as pd
+
+st.header("My first Streamlit App")
+st.write(pd.DataFrame({
+    'Intplan': ['yes', 'yes', 'yes', 'no'],
+    'Churn Status': [0, 0, 0, 1]
+}))
